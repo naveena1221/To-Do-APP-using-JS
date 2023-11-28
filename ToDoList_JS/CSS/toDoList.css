@@ -1,0 +1,92 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: white;
+    background: linear-gradient(to bottom right, skyblue, violet);
+    text-align: center;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+}
+#header .heading1{
+    font-size: 30px;
+    font-weight: bold;
+}
+#new-task-form input{
+    height: 30px;
+    border-radius: 10px;
+}
+#new-task-input{
+    width: 400px;
+}
+#new-task-submit{
+    width:60px;
+    background-color: rgb(210, 247, 235);
+}
+#taskList{
+    width:700px;
+    /* display:flex;
+    flex-direction: column;
+    align-items: center; */
+    max-height: 500px;
+    overflow-y: auto;
+}
+.checkbox{
+    flex: 0.5;
+}
+.taskLabel{
+    
+    flex: 3;
+    width:200px;
+    margin-right: 10px;
+    word-wrap: break-word;
+    
+}
+
+li{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+}
+li label {
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: rgb(194, 144, 241);
+    margin: 2px;
+    padding: 5px;
+    
+}
+#hide{
+    display: none;
+}
+
+.edit-btn,
+.delete-btn {
+    margin: 10px 10px; 
+    border: none;
+    border-radius: 5px;
+    flex: 0.5;
+}
+#all-tab,#pending-tab,#completed-tab{
+    border-radius: 10px;
+    width:100px;
+}
+.active-tab{
+    background: linear-gradient(to bottom, rgb(221, 249, 221), lightgreen);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for the active tab */
+  transform: scale(1.1);
+}
+.inactive-tab{
+    background-color: rgb(210, 247, 235);
+}
+
